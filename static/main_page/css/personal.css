@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+#team {
+	background-image: url(../img/back.jpg); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+
+#top-nav{
+	background-color: white;
+}
+#top-nav li {
+    font-size: 10px;
+}
+
+.navbar-right{
+	margin-top: 45px;
+}
+.section-title{
+	margin-top: 10px;
+}
+.section-title .title>span.appear
+{
+	color: navajowhite;
+}
+.notreq span{
+	display: none !important; 
+}
+.member-content h3{
+	font-size: 19px;
+}
+.alummem .member-content{
+	background-image: url(../img/alumni_panel.jpg);
+	border-radius: 10px;
+}
+.alummem .member-body{
+	position: relative;
+	bottom: 0px;
+}
+.alummem .member-content h3{
+	text-align: left;
+	color: cadetblue;
+	
+}
+.alummem .member-content p{
+color: cadetblue;
+    text-align: center;
+    font-size: 17px;
+}

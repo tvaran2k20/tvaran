@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background:url("../../img/bannerr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    opacity:.9;
+}
+input{
+  opacity: .8;
+   border: 1px solid #ff9933 !important;
+   
+
+}
+
+input[type = "checkbox"]{
+    font-size: 2rem;
+}
+
+input:focus{
+    box-shadow: none !important;
+    outline: none !important;
+    
+}
+ul,li{
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+li:hover{
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+.form-container{
+
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,.2);
+    border-radius: 10px;
+    
+  
+    background: white; 
+    
+    
+
+}
+.cnext{
+float: right;
+}
+.cSuggestion{
+    border: 1px solid white;
+    box-shadow: 0px 10px 10px white;
+    border-radius: 7px;
+    background-color: white;
+    opacity: .9;       
+    
+}

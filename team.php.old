@@ -1,0 +1,181 @@
+<?php 
+
+include("./databases/dbconn.php");
+  $teamquery = "SELECT * FROM `team` WHERE status = 2";
+  $festCoordinator = mysqli_query($conn,$teamquery);
+  $teamquery1 = "SELECT * FROM `team` WHERE status = 1";
+  $secc = mysqli_query($conn,$teamquery1);
+  $sec = mysqli_fetch_array($secc);
+  $webquery = "SELECT * FROM `team` WHERE status = 3  LIMIT 4";
+  $webfire = mysqli_query($conn,$webquery);
+  $wwebquery = "SELECT * FROM `team` WHERE id = 24";
+  $wwebfire = mysqli_query($conn,$wwebquery);
+  $wwebdata = mysqli_fetch_array($wwebfire);
+  $gquery = "SELECT * FROM `team` WHERE status = 4";
+  $gfire = mysqli_query($conn,$gquery);
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+        
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tvaran</title>
+    
+    <link rel="stylesheet" href="assests/css/lib/bootstrap.css">
+    <link rel="stylesheet" href="./assests/css/event.css">
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/team.css">
+    <link rel="stylesheet" href="./assests/css/sponser.css">
+    
+    
+</head>
+
+<body>
+
+ <div class="  pb-4 pt-1 main-container" id="team" >
+ 
+
+ <div class="container-fluid">
+        <h2 class="text-uppercase team-heading py-2 text-center bg-info">Tvaran team </h2>
+   <h5 class="text-uppercase team-heading py-2 text-center">fest organising secretary</h5>
+   <div class="row">
+
+           <div class="col-12  col-md-6 col-lg-3 my-2 d-flex justify-content-center mx-auto">
+            <div class="card" style="width:22rem;">
+               <img src="./img/bg/bg_1.jpeg" class="card-img-top" style="height:150px; opacity:1;">
+                <div class="card-body">
+                   <img src="./img/team/core/<?php echo $sec['img']; ?>" class="profile" style="height:210px; width:210px;">
+                    <h5 class="card-title text-center mt-3"><b><?php echo $sec['name']; ?></b></h5>
+                    <h6 class="card-title text-center " style="margin-top:-10px;"><b><?php echo $sec['work'];   ?></b></h6>
+                 <!--<div class="links mb-4 d-flex justify-content-center mx-auto">-->
+                  <a href="<?php echo $sec['fb_link']; ?>"> <i class="fab fa-facebook"></i></a>
+                  <a href="<?php echo $sec['linkdin_link']; ?>"><i class="fab fa-instagram"></i></a>
+                  <a href="mailto:<?php echo $sec['gmail']; ?>"><i class="fa fa-envelope"></i></a>
+<!--                </div>-->
+                </div>
+                
+            </div>
+        
+           
+       </div>
+   </div>
+     </div>
+     
+   <div class="container-fluid">
+    <h3 class="text-uppercase team-heading py-2 my-2 text-center">fest organising team</h3>
+    <div class="row">
+    
+ <?php while($ffestCoordinator = mysqli_fetch_array($festCoordinator)){ ?>
+
+
+        <div class="col-12  col-md-6 col-lg-3 my-4 d-flex mx-auto justify-content-center">
+            <div class="card" style="width:22rem;">
+               <img src="./img/bg/bg_1.jpeg" class="card-img-top" style="height:150px; opacity:1;">
+                <div class="card-body">
+                   <img src="./img/team/core/<?php echo $ffestCoordinator['img']; ?>" class="profile" style="height:210px; width:210px;">
+                    <h5 class="card-title text-center mt-3"><b><?php echo $ffestCoordinator['name']; ?></b></h5>
+                    <h6 class="card-title text-center " style="margin-top:-10px;"><b><?php echo $ffestCoordinator['work'];   ?></b></h6>
+<!--                 <div class="links mb-4 d-flex justify-content-center mx-auto">-->
+                  <a href="<?php echo $ffestCoordinator['fb_link']; ?>"> <i class="fab fa-facebook"></i></a>
+                  <a href="<?php echo $ffestCoordinator['linkdin_link']; ?>"><i class="fab fa-instagram"></i></a>
+                  <a href="mailto:<?php echo $ffestCoordinator['gmail']; ?>"><i class="fa fa-envelope"></i></a>
+                <!--</div>-->
+                </div>
+                
+            </div>
+        </div>
+   
+<?php } ?>
+ </div>
+</div>
+
+<!--  web team -->
+<div class="container-fluid">
+    <h3 class="text-uppercase team-heading py-2 my-2 text-center">Web Developer team</h3>
+    <div class="row">
+    
+ <?php while($webdata = mysqli_fetch_array($webfire)){ ?>
+
+
+           <div class="col-12  col-md-6 col-lg-3 my-4 d-flex">
+            <div class="card" style="width:22rem;">
+               <img src="./img/bg/bg_1.jpeg" class="card-img-top" style="height:150px; opacity:1;">
+                <div class="card-body">
+                   <img src="./img/team/desigining/<?php echo $webdata['img']; ?>" class="profile" style="height:210px; width:210px;">
+                    <h5 class="card-title text-center mt-3"><b><?php echo $webdata['name']; ?></b></h5>
+                    <h6 class="card-title text-center " style="margin-top:-10px;"><b><?php echo $webdata['work'];   ?></b></h6>
+               <!--  <div class="links mb-4 d-flex justify-content-center mx-auto">-->
+                  <a href="<?php echo $webdata['fb_link']; ?>"> <i class="fab fa-facebook"></i></a>
+                  <a href="<?php echo $webdata['linkdin_link']; ?>"><i class="fab fa-instagram"></i></a>
+                  <a href="mailto:<?php echo $webdata['gmail']; ?>"><i class="fa fa-envelope"></i></a>
+               <!-- </div>-->
+                </div>
+                
+            </div>
+        </div>
+   
+<?php } ?>
+      <div class="col-12  col-md-6 col-lg-3 my-4 d-flex">
+            <div class="card" style="width:22rem;">
+               <img src="./img/bg/bg_1.jpeg" class="card-img-top" style="height:150px; opacity:1;">
+                <div class="card-body">
+                   <img src="./img/team/desigining/<?php echo $wwebdata['img']; ?>" class="profile" style="height:210px; width:210px;">
+                    <h5 class="card-title text-center mt-3"><b><?php echo $wwebdata['name']; ?></b></h5>
+                    <h6 class="card-title text-center " style="margin-top:-10px;"><b><?php echo $wwebdata['work'];   ?></b></h6>
+               <!--  <div class="links mb-4 d-flex justify-content-center mx-auto">-->
+                  <a href="<?php echo $wwebdata['fb_link']; ?>"> <i class="fab fa-facebook"></i></a>
+                  <a href="<?php echo $wwebdata['linkdin_link']; ?>"><i class="fab fa-instagram"></i></a>
+                  <a href="mailto:<?php echo $wwebdata['gmail']; ?>"><i class="fa fa-envelope"></i></a>
+               <!-- </div>-->
+                </div>
+                
+            </div>
+        </div>
+ </div>
+</div>
+<!--piic-1 end-->
+<!--graphics designing-->
+<div class="container-fluid">
+    <h3 class="text-uppercase team-heading py-2 my-2 text-center">graphic designer</h3>
+    <div class="row">
+    
+ <?php while($gdata = mysqli_fetch_array($gfire)){ ?>
+
+
+        <div class="col-12  col-md-6 col-lg-3 my-4 d-flex mx-auto justify-content-center">
+            <div class="card" style="width:22rem;">
+               <img src="./img/bg/bg_1.jpeg" class="card-img-top" style="height:150px; opacity:1;">
+                <div class="card-body">
+                   <img src="./img/team/graphics/<?php echo $gdata['img']; ?>" class="profile" style="height:210px; width:210px;">
+                    <h5 class="card-title text-center mt-3"><b><?php echo $gdata['name']; ?></b></h5>
+                    <h6 class="card-title text-center " style="margin-top:-10px;"><b><?php echo $gdata['work'];   ?></b></h6>
+<!--                 <div class="links mb-4 d-flex justify-content-center mx-auto">-->
+                  <a href="<?php echo $gdata['fb_link']; ?>"> <i class="fab fa-facebook"></i></a>
+                  <a href="<?php echo $gdatar['linkdin_link']; ?>"><i class="fab fa-instagram"></i></a>
+                  <a href="mailto:<?php echo $gdata['gmail']; ?>"><i class="fa fa-envelope"></i></a>
+                <!--</div>-->
+                </div>
+                
+            </div>
+        </div>
+   
+<?php } ?>
+ </div>
+</div>
+</div>
+ 
+  
+<!--piic-3 end-->
+
+
+<script src="assests/js/lib/jquery.js"></script>
+<script src="assests/js/lib/bootstrap.min.js"></script>
+<script src="assests/js/lib/all.min.js"></script>
+<script src="assests/js/app.js"></script>
+
+
+</body>
+
+</html>

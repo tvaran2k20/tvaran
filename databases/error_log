@@ -1,0 +1,18 @@
+[29-Jan-2020 10:56:47 UTC] PHP Notice:  Undefined index: check_list in /home/wmcr82ra7u63/public_html/databases/eventdb.php on line 5
+[29-Jan-2020 10:56:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/wmcr82ra7u63/public_html/databases/eventdb.php on line 5
+[29-Jan-2020 10:57:02 UTC] PHP Notice:  Undefined index: check_list in /home/wmcr82ra7u63/public_html/databases/eventdb.php on line 5
+[29-Jan-2020 10:57:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/wmcr82ra7u63/public_html/databases/eventdb.php on line 5
+[30-Jan-2020 17:09:48 UTC] PHP Notice:  Undefined index: check_list in /home/wmcr82ra7u63/public_html/databases/eventdb.php on line 5
+[30-Jan-2020 17:09:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/wmcr82ra7u63/public_html/databases/eventdb.php on line 5
+[30-Jan-2020 17:12:54 UTC] PHP Notice:  Undefined variable: cid in /home/wmcr82ra7u63/public_html/databases/eventdb.php on line 20
+[30-Jan-2020 17:12:54 UTC] PHP Notice:  Undefined variable: sid in /home/wmcr82ra7u63/public_html/databases/eventdb.php on line 20
+[30-Jan-2020 19:40:05 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/wmcr82ra7u63/public_html/databases/eventdb.php on line 38
+[30-Jan-2020 19:40:13 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/wmcr82ra7u63/public_html/databases/eventdb.php on line 38
+[30-Jan-2020 19:41:27 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/wmcr82ra7u63/public_html/databases/eventdb.php on line 38
+[01-Feb-2020 08:46:53 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/wmcr82ra7u63/public_html/databases/txn.php on line 13
+[01-Feb-2020 08:48:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/wmcr82ra7u63/public_html/databases/txn.php on line 13
+[01-Feb-2020 08:49:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/wmcr82ra7u63/public_html/databases/txn.php on line 13
+[01-Feb-2020 08:54:58 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/wmcr82ra7u63/public_html/databases/txn.php on line 13
+[04-Feb-2020 05:27:51 UTC] PHP Notice:  Undefined index: ename in /home/wmcr82ra7u63/public_html/databases/studentdb.php on line 8
+[07-Feb-2020 13:49:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/wmcr82ra7u63/public_html/databases/txn.php on line 13
+[21-Feb-2020 06:57:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/wmcr82ra7u63/public_html/databases/txn.php on line 13
